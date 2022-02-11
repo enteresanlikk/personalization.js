@@ -29,8 +29,7 @@ class Personalization {
     render(element, data) {
       const attr = element.getAttribute(this.attribute);
 
-      const attributes = Array.from(element.attributes);
-      for(const attribute of attributes) {
+      for(const attribute of element.attributes) {
         if(attribute.name != this.attribute) {
           element.removeAttribute(attribute.name);
         }
@@ -94,7 +93,7 @@ class Personalization {
           }
         }
   
-        const subItems = Array.from(component.querySelectorAll(`[${this.attribute}]`));
+        const subItems = component.querySelectorAll(`[${this.attribute}]`);
   
         for (let subItem of subItems) {
           const attr = subItem.getAttribute(this.attribute);
