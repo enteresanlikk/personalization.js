@@ -5,7 +5,9 @@ const data = {
       title: {
         text: "default title",
       },
-      description: "default desc",
+      description: {
+        text: "default desc"
+      },
       "desktop-image": {
         src: "https://awmedu.com/wp-content/uploads/2016/08/android-logo-200x200.jpg",
         alt: "Android",
@@ -25,7 +27,9 @@ const data = {
       title: {
         text: "puppy title",
       },
-      description: "puppy desc",
+      description: {
+        text: "puppy desc"
+      },
       "mobile-image": {
         src: "",
         alt: "Android",
@@ -36,6 +40,43 @@ const data = {
       },
     },
   ],
-};
-
-let selectedTags = [];
+  second: [
+    {
+      tags: [],
+      title: {
+        text: "2. default title",
+      },
+      description: {
+        text: "2. default desc"
+      },
+      link: {
+        text: 'aaa',
+        href: 'javascript:;'
+      }
+    },
+    {
+      tags: [
+        {
+          type: "lifestage",
+          tag: "adult",
+        },
+        {
+          type: "size",
+          tag: "small",
+        },
+      ],
+      title: {
+        text: "2. adult small title",
+      },
+      description: {
+        text: "2. adult small desc"
+      },
+      link: {
+        text: 'bilal',
+        href: 'https://google.com.tr',
+        class: 'sdfsdf',
+        style: 'font-size: 30px; color: #f91'
+      }
+    }
+  ]
+}
